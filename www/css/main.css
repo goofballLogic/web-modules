@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+body > footer,
+body > header {
+    background-color: #DEF;
+    color: #777;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 0 -20px;
+}
+body > header h1 {
+    color: rgba(255,255,255,1);
+    text-shadow: rgba(0,0,0,0.5) 1px 1px;
+}
+body > header {
+
+    margin: -20px -20px 20px -20px;
+
+}
+body > footer {
+
+    position: absolute;
+    bottom: 20px;
+    height: 60px;
+    width: 100vw;
+    margin: 20px -20px -20px -20px;
+}
+
+
+ul.main-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.main-list input[name=completed] {
+    position: absolute;
+    left: -100px;
+}
+ul.main-list li.task {
+    padding: 5px;
+    margin: 5px;
+    min-width: 500px;
+    border-left: solid 5px white;
+}
+ul.main-list li.task.completed {
+    text-decoration: line-through;
+    color: silver;
+}
+ul.main-list li.task:hover,
+ul.main-list li.task.focused {
+    border-left-color: silver;
+}
+ul.main-list li.task label {
+    display: flex;
+}

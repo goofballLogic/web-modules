@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    order: 9999;
+    visibility: hidden;
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.tests-complete iframe {
+
+    visibility: visible;
+}
