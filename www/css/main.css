@@ -5,7 +5,10 @@
 body {
     margin: 0;
     padding: 20px;
-    min-height: 100vh;
+    min-height: 100vh
+}
+body, input {
+    font-size: 10pt;
 }
 body > footer,
 body > header {
@@ -61,4 +64,12 @@ ul.main-list li.task.focused {
 }
 ul.main-list li.task label {
     display: flex;
+}
+*::placeholder {
+    opacity: 0.5;
+}
+input.task-name {
+    width: 400px;
+    padding: 10px;
+    max-width: 100vw;
 }
